@@ -1,0 +1,16 @@
+E:\实训项目\ycfzOA\DAL\bin\Debug\DAL.dll
+E:\实训项目\ycfzOA\DAL\bin\Debug\DAL.pdb
+E:\实训项目\ycfzOA\DAL\bin\Debug\Model.dll
+E:\实训项目\ycfzOA\DAL\bin\Debug\Model.pdb
+E:\实训项目\ycfzOA\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\实训项目\ycfzOA\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\实训项目\ycfzOA\DAL\obj\Debug\DAL.dll
+E:\实训项目\ycfzOA\DAL\obj\Debug\DAL.pdb
+E:\实训\ycfzOA\DAL\bin\Debug\DAL.dll
+E:\实训\ycfzOA\DAL\bin\Debug\DAL.pdb
+E:\实训\ycfzOA\DAL\bin\Debug\Model.dll
+E:\实训\ycfzOA\DAL\bin\Debug\Model.pdb
+E:\实训\ycfzOA\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\实训\ycfzOA\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\实训\ycfzOA\DAL\obj\Debug\DAL.dll
+E:\实训\ycfzOA\DAL\obj\Debug\DAL.pdb

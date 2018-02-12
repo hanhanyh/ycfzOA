@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33B38F37-4AAE-4537-B931-1FC998162FAD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSkin, Version=16.1.14.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="websocket-sharp, Version=1.0.2.42083, Culture=neutral, PublicKeyToken=5660b08a1845a91e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\vs2013projects\wsServer\wsServer\DLLS\websocket-sharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addUserForm.Designer.cs">
+      <DependentUpon>addUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ALLHTForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ALLHTForm.Designer.cs">
+      <DependentUpon>ALLHTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllrichengForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllrichengForm.Designer.cs">
+      <DependentUpon>AllrichengForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allxcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allxcForm.Designer.cs">
+      <DependentUpon>allxcForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatForm.Designer.cs">
+      <DependentUpon>ChatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clientRecvForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientRecvForm.Designer.cs">
+      <DependentUpon>clientRecvForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="departAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="departAdminForm.Designer.cs">
+      <DependentUpon>departAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmailDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmailDetailForm.Designer.cs">
+      <DependentUpon>EmailDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmailForm.Designer.cs">
+      <DependentUpon>EmailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gdDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gdDetailForm.Designer.cs">
+      <DependentUpon>gdDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ggaddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ggaddForm.Designer.cs">
+      <DependentUpon>ggaddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ggAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ggAdminForm.Designer.cs">
+      <DependentUpon>ggAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GGClient.cs" />
+    <Compile Include="gongwenAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gongwenAdminForm.Designer.cs">
+      <DependentUpon>gongwenAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gongwendetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gongwendetailForm.Designer.cs">
+      <DependentUpon>gongwendetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gongwenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gongwenForm.Designer.cs">
+      <DependentUpon>gongwenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gwdetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gwdetailForm.Designer.cs">
+      <DependentUpon>gwdetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeSubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeSubForm.Designer.cs">
+      <DependentUpon>HomeSubForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HTAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HTAddForm.Designer.cs">
+      <DependentUpon>HTAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HTdetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HTdetailForm.Designer.cs">
+      <DependentUpon>HTdetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HTGLsubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HTGLsubForm.Designer.cs">
+      <DependentUpon>HTGLsubForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobAdminForm.Designer.cs">
+      <DependentUpon>JobAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jxAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jxAdminForm.Designer.cs">
+      <DependentUpon>jxAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jxForm.Designer.cs">
+      <DependentUpon>jxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQRecordForm.Designer.cs">
+      <DependentUpon>KQRecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Local.cs" />
+    <Compile Include="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginProgressBarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginProgressBarForm.Designer.cs">
+      <DependentUpon>LoginProgressBarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MySelfInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MySelfInfoForm.Designer.cs">
+      <DependentUpon>MySelfInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="richengdetailsmallForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="richengdetailsmallForm.Designer.cs">
+      <DependentUpon>richengdetailsmallForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoDetailDLG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfoDetailDLG.Designer.cs">
+      <DependentUpon>UserInfoDetailDLG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMansubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserMansubForm.Designer.cs">
+      <DependentUpon>UserMansubForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeatherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeatherForm.Designer.cs">
+      <DependentUpon>WeatherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="worklogDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="worklogDetailForm.Designer.cs">
+      <DependentUpon>worklogDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorklogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorklogForm.Designer.cs">
+      <DependentUpon>WorklogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xcForm.Designer.cs">
+      <DependentUpon>xcForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addUserForm.resx">
+      <DependentUpon>addUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ALLHTForm.resx">
+      <DependentUpon>ALLHTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllrichengForm.resx">
+      <DependentUpon>AllrichengForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allxcForm.resx">
+      <DependentUpon>allxcForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatForm.resx">
+      <DependentUpon>ChatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientRecvForm.resx">
+      <DependentUpon>clientRecvForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="departAdminForm.resx">
+      <DependentUpon>departAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmailDetailForm.resx">
+      <DependentUpon>EmailDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmailForm.resx">
+      <DependentUpon>EmailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gdDetailForm.resx">
+      <DependentUpon>gdDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ggaddForm.resx">
+      <DependentUpon>ggaddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ggAdminForm.resx">
+      <DependentUpon>ggAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gongwenAdminForm.resx">
+      <DependentUpon>gongwenAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gongwendetailForm.resx">
+      <DependentUpon>gongwendetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gongwenForm.resx">
+      <DependentUpon>gongwenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gwdetailForm.resx">
+      <DependentUpon>gwdetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeSubForm.resx">
+      <DependentUpon>HomeSubForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HTAddForm.resx">
+      <DependentUpon>HTAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HTdetailForm.resx">
+      <DependentUpon>HTdetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HTGLsubForm.resx">
+      <DependentUpon>HTGLsubForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobAdminForm.resx">
+      <DependentUpon>JobAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jxAdminForm.resx">
+      <DependentUpon>jxAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jxForm.resx">
+      <DependentUpon>jxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQRecordForm.resx">
+      <DependentUpon>KQRecordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginProgressBarForm.resx">
+      <DependentUpon>LoginProgressBarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MySelfInfoForm.resx">
+      <DependentUpon>MySelfInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="richengdetailsmallForm.resx">
+      <DependentUpon>richengdetailsmallForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfoDetailDLG.resx">
+      <DependentUpon>UserInfoDetailDLG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMansubForm.resx">
+      <DependentUpon>UserMansubForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeatherForm.resx">
+      <DependentUpon>WeatherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="worklogDetailForm.resx">
+      <DependentUpon>worklogDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorklogForm.resx">
+      <DependentUpon>WorklogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xcForm.resx">
+      <DependentUpon>xcForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BLL\BLL.csproj">
+      <Project>{fef84e03-cba9-4850-88bb-6d7fa2cbb820}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Model\Model.csproj">
+      <Project>{65e47e59-2f81-4539-896d-3009d6910f23}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dlls\CSkin.dll" />
+    <Content Include="dlls\CSkin.XML" />
+    <Content Include="dlls\websocket-sharp.dll" />
+    <Content Include="imgs\btn.png" />
+    <Content Include="imgs\btnqiandao.png" />
+    <Content Include="imgs\btnricheng.png" />
+    <Content Include="imgs\btnwodeyouxiang.png" />
+    <Content Include="imgs\btnwodeziliao.png" />
+    <Content Include="imgs\chatBkg.jpg" />
+    <Content Include="imgs\chatright.jpg" />
+    <Content Include="imgs\loginback2.png" />
+    <Content Include="imgs\loginbkg.png" />
+    <Content Include="imgs\loginbkg1.png" />
+    <Content Include="imgs\loginbtn.png" />
+    <Content Include="imgs\logintxt.png" />
+    <Content Include="imgs\logo.png" />
+    <Content Include="imgs\mainbtn.png" />
+    <Content Include="imgs\maintop.png" />
+    <Content Include="imgs\touxiang.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
